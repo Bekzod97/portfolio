@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Your Meal",
+        "imgSrc": "./images/projects/your-meal.jpg",
+        "skills": "HTML CSS JavaScript",
+        "gitHubRepo": "https://github.com/Bekzod97/yourMeal",
+        "gitHubPage": "https://bekzod97.github.io/yourMeal/"
+    },
+    {
+        "id": 2,
+        "name": "To Do",
+        "imgSrc": "./images/projects/toDo.jpg",
+        "skills": "HTML CSS JavaScript",
+        "gitHubRepo": "https://github.com/Bekzod97/toDo",
+        "gitHubPage": "https://bekzod97.github.io/toDo/"
+    },
+    {
+        "id": 3,
+        "name": "cyberpunk",
+        "imgSrc": "./images/projects/cyberpunk.jpg",
+        "skills": "HTML CSS JavaScript",
+        "gitHubRepo": "https://github.com/Bekzod97/cyberpunk",
+        "gitHubPage": "https://bekzod97.github.io/cyberpunk/"
+    },
+    {
+        "id": 4,
+        "name": "weatherApp",
+        "imgSrc": "./images/projects/weatherApp.jpg",
+        "skills": "HTML CSS JavaScript",
+        "gitHubRepo": "https://github.com/Bekzod97/weatherApp",
+        "gitHubPage": "https://bekzod97.github.io/weatherApp/"
+    }
+]
