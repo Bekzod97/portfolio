@@ -1,7 +1,8 @@
-const projectList = document.querySelector(".projects__list");
+
 const detailInner = document.querySelector(".detail__inner");
 const burger = document.querySelector(".burger");
 const body = document.querySelector("body");
+
 
 getProjects();
 
@@ -12,27 +13,6 @@ async function getProjects() {
     const data = await response.json();
 
     return data;
-}
-
-
-// Рендерим проекты в index.html
-function renderProjects(data) {
-
-    data.forEach(item => {
-        let li = document.createElement("li");
-
-        li.classList.add("project__item");
-        li.dataset.id = item.id;
-
-        // У ссылки а есть строка запроса ?id=${item.id}. Это будет равно id = 1,2,3,4
-        li.innerHTML = ` <a class="project__link" href="./project-page.html?name=${item.name}" > 
-                            <img class="project__img" src=${item.imgSrc} alt=${item.name}>
-                            <h3 class="project-link__title">${item.name}</h3>
-                        </a>`
-
-        projectList.insertAdjacentElement("beforeend", li);
-
-    });
 }
 
 // Рендерим детали проекта на основе id в project-page.html
@@ -78,13 +58,7 @@ async function renderDetail(data) {
 
 
 // Проверяем на какой странице находимся
-// Если на странице index.html
-if (window.location.pathname.includes('/index.html')) {
-
-    // то тогда рендерим проекты
-    getProjects().then(renderProjects)
-
-} else if (window.location.pathname.includes('/project-page.html')) {
+if (window.location.pathname.includes('/project-page.html')) {
     // Если на странице  project-page.html то рендерим detailProject
     getProjects().then(renderDetail);
 
